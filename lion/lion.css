@@ -1,0 +1,356 @@
+:root {
+    --bg: rgb(195, 222, 210);
+    --body: rgb(228, 196, 121);
+    --limbs: rgb(192, 166, 102);
+    --blush: rgb(201, 149, 98);
+    --paws: rgb(51, 7, 14);
+    --shadow: rgb(146, 167, 159);
+    --hair: rgb(141, 96, 73);
+}
+
+body {
+    background-color: var(--bg);
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.lion-container {
+    width: 70%;
+    height: 90%;
+}
+
+.head {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    z-index: 9;
+}
+
+.hair {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    background-color: var(--hair);
+    border-radius: 60%;
+    border: 4px solid var(--paws);
+    z-index: 1;
+    top: 50%;
+    left: 18%;
+}
+
+.face-1 {
+    width: 50%;
+    height: 45%;
+    background-color: var(--body);
+    z-index: 2;
+    position: absolute;
+    top: 27%;
+    left: 25%;
+    border-radius: 50% / 100% 100% 0 0;
+    border: 4px solid var(--paws);
+
+    ;
+}
+
+.face-2 {
+    width: 25%;
+    height: 18%;
+    background-color: var(--body);
+    z-index: 2;
+    position: absolute;
+    top: 73%;
+    left: 26%;
+    border-radius: 0 0 0 100%;
+    border-bottom: 8px solid var(--paws);
+    padding: 2px;
+
+}
+
+.face-3 {
+    width: 25%;
+    height: 18%;
+    background-color: var(--body);
+    z-index: 2;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    border-radius: 0 0 100% 0;
+    border-bottom: 8px solid var(--paws);
+    padding: 2px;
+
+}
+
+.left-eye {
+    width: 30px;
+    height: 30px;
+    background-color: var(--paws);
+    border-radius: 50%;
+    position: absolute;
+    top: 75%;
+    left: 17%;
+}
+
+.left-eye .inner-eye-one,
+.right-eye .inner-eye-one {
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.left-eye .inner-eye-one {
+    position: absolute;
+    right: 0;
+    margin: 3px;
+}
+
+.right-eye .inner-eye-one {
+    position: absolute;
+    right: left;
+    margin: 3px;
+}
+
+.left-eye .inner-eye-two,
+.right-eye .inner-eye-two {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.left-eye .inner-eye-two {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+.right-eye .inner-eye-two {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.right-eye {
+    width: 30px;
+    height: 30px;
+    background-color: var(--paws);
+    border-radius: 50%;
+    position: absolute;
+    top: 75%;
+    left: 70%;
+}
+
+.nose {
+    background-color: var(--paws);
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    bottom: 18%;
+    right: 46%;
+    border-radius: 50% 50%;
+    z-index: 5;
+}
+
+.ear-left,
+.ear-right {
+    width: 100px;
+    height: 100px;
+    background-color: var(--body);
+    border-radius: 50%;
+    border: 4px solid var(--paws);
+}
+
+.ear-left .inner-ear,
+.ear-right .inner-ear {
+    width: 70px;
+    height: 70px;
+    background-color: var(--limbs);
+    border-radius: 50%;
+    border: 4px solid var(--paws);
+}
+
+.ear-left .inner-ear {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.ear-right .inner-ear {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+}
+
+.ear-left {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.ear-right {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+.blush-left {
+    width: 40px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--blush);
+    position: absolute;
+    bottom: 35px;
+    left: 20px;
+}
+
+.blush-right {
+    width: 40px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--blush);
+    position: absolute;
+    bottom: 35px;
+    right: 20px;
+}
+
+.body {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px solid var(--paws);
+    background-color: var(--body);
+    position: absolute;
+    top: 45%;
+    left: 38%;
+}
+
+.left-paw,
+.right-paw {
+    width: 80px;
+    height: 100px;
+    background-color: var(--body);
+    border: 4px solid var(--paws);
+    border-radius: 50%;
+}
+
+.left-paw {
+    position: absolute;
+    bottom: -5%;
+    transform: rotateZ(10deg);
+}
+
+.right-paw {
+    position: absolute;
+    bottom: -5%;
+    right: 0;
+    transform: rotateZ(-15deg);
+}
+
+.left-paw .paw-1,
+.right-paw .paw-1 {
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--paws);
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+
+.left-paw .paw-2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--paws);
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.left-paw .paw-3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--paws);
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.left-paw .paw-4 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--paws);
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.right-paw .paw-2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--paws);
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.right-paw .paw-3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--paws);
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.right-paw .paw-4 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--paws);
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.left-hand {
+    width: 150px;
+    height: 60px;
+    background-color: var(--limbs);
+    border: 4px solid var(--paws);
+    position: absolute;
+    left: 0;
+    z-index: 8;
+    top: 45px;
+    border-radius: 0 100% 100% 0;
+    transform: rotateZ(60deg);
+    z-index: 3;
+}
+
+.right-hand {
+    width: 150px;
+    height: 60px;
+    background-color: var(--limbs);
+    border: 4px solid var(--paws);
+    position: absolute;
+    right: 0;
+    z-index: 8;
+    top: 45px;
+    border-radius: 0 100% 100% 0;
+    transform: rotateZ(120deg);
+}
+
+.shadpw {
+    background-color: var(--shadow);
+    width: 80vw;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+}
