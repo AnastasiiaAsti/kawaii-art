@@ -1,6 +1,12 @@
-# kawaii-art
+# KawaiiDraws
 
-A collection of animated creatures
+Welcome to KawaiiDraws: Where CSS Magic Brings Kawaii Animals to Life!
+
+Get ready to enter a whimsical world of adorable kawaii animals, brought to you through the enchantment of CSS drawings. KawaiiDraws is the perfect destination for all lovers of cuteness and creativity.
+
+Immerse yourself in the charm and playfulness of these delightful CSS-drawn kawaii creatures. From fluffy kittens and cuddly pandas to cheeky foxes and smiling bunnies, each animal comes to life through the magic of CSS animations and vibrant colors.
+
+Explore the captivating collection of kawaii animals, each meticulously crafted with CSS code. Witness their adorable expressions, animated movements, and joyful personalities. It's a visual treat that will bring a smile to your face and warmth to your heart.
 
 # Tech used: 
 
